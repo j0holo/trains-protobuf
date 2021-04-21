@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package proto.v1;
+
+option go_package = "github.com/j0holo/trains/protobuf";
+
+message TrainMetrics {
+    string id = 1;
+    int32 speed = 2;
+    int32 acceleration = 3;
+    int64 send_at = 4;
+}
